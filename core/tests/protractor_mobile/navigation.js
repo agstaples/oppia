@@ -26,7 +26,7 @@ describe('Navigation features on mobile', function() {
   var libraryPage = null;
 
   beforeEach(function() {
-    libraryPage = new LibraryPage.LibraryPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
     libraryPage.get();
   });
 

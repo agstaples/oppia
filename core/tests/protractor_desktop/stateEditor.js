@@ -420,8 +420,8 @@ describe('State editor', function() {
       'user2@statisticsTab.com', 'statisticsTabLearner1');
     users.createUser(
       'user3@statisticsTab.com', 'statisticsTabLearner2');
-    var libraryPage = new LibraryPage.LibraryPage();
-    var creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
+    var libraryPage = new LibraryPage.LibraryPageHandler();
+    var creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
     var explorationPlayerPage =
       new ExplorationPlayerPage.ExplorationPlayerPage();
     var explorationStatsTab = explorationEditorPage.getStatsTab();

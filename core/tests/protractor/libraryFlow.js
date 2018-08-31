@@ -38,7 +38,7 @@ describe('Library pages tour', function() {
   var explorationPlayerPage = null;
 
   beforeEach(function() {
-    libraryPage = new LibraryPage.LibraryPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
     explorationPlayerPage = new ExplorationPlayerPage.ExplorationPlayerPage();
   });
 
@@ -48,7 +48,7 @@ describe('Library pages tour', function() {
   };
 
   var rateExploration = function() {
-    var adminPage = new AdminPage.AdminPage();
+    var adminPage = new AdminPage.AdminPageHandler();
     users.createUser('random@gmail.com', 'random');
     users.login('random@gmail.com', true);
     // We need an exploration to rate here.
@@ -109,8 +109,8 @@ describe('Rating', function() {
   var explorationPlayerPage = null;
 
   beforeEach(function() {
-    adminPage = new AdminPage.AdminPage();
-    libraryPage = new LibraryPage.LibraryPage();
+    adminPage = new AdminPage.AdminPageHandler();
+    libraryPage = new LibraryPage.LibraryPageHandler();
     explorationPlayerPage = new ExplorationPlayerPage.ExplorationPlayerPage();
   });
 

@@ -49,10 +49,10 @@ describe('Learner dashboard functionality', function() {
   var subscriptionDashboardPage = null;
 
   beforeAll(function() {
-    libraryPage = new LibraryPage.LibraryPage();
-    learnerDashboardPage = new LearnerDashboardPage.LearnerDashboardPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
+    learnerDashboardPage = new LearnerDashboardPage.LearnerDashboardPageHandler();
     collectionEditorPage = new CollectionEditorPage.CollectionEditorPage();
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorMainTab = explorationEditorPage.getMainTab();
     explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();

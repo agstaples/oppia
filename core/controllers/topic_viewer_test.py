@@ -54,7 +54,7 @@ class BaseTopicViewerControllerTest(test_utils.GenericTestBase):
         topic_services.publish_topic(self.topic_id, self.admin_id)
 
 
-class TopicViewerPage(BaseTopicViewerControllerTest):
+class TopicViewerPageHandler(BaseTopicViewerControllerTest):
 
     def test_any_user_can_access_topic_viewer_page(self):
         with self.swap(feconf, 'ENABLE_NEW_STRUCTURES', True):

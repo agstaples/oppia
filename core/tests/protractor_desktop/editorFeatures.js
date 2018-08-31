@@ -540,8 +540,8 @@ describe('ExplorationFeedback', function() {
   beforeEach(function() {
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorFeedbackTab = explorationEditorPage.getFeedbackTab();
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
-    libraryPage = new LibraryPage.LibraryPage();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
+    libraryPage = new LibraryPage.LibraryPageHandler();
     explorationPlayerPage = new ExplorationPlayerPage.ExplorationPlayerPage();
   });
 
@@ -621,15 +621,15 @@ describe('Issues visualization', function() {
   var oppiaLogo = element(by.css('.protractor-test-oppia-main-logo'));
 
   beforeAll(function() {
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorStatsTab = explorationEditorPage.getStatsTab();
     explorationEditorMainTab = explorationEditorPage.getMainTab();
     explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();
     explorationPlayerPage = new ExplorationPlayerPage.ExplorationPlayerPage();
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
-    libraryPage = new LibraryPage.LibraryPage();
-    adminPage = new AdminPage.AdminPage();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
+    libraryPage = new LibraryPage.LibraryPageHandler();
+    adminPage = new AdminPage.AdminPageHandler();
 
     users.createUser(
       'user2@ExplorationIssues.com',
@@ -839,8 +839,8 @@ describe('Suggestions on Explorations', function() {
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorFeedbackTab = explorationEditorPage.getFeedbackTab();
     explorationPlayerPage = new ExplorationPlayerPage.ExplorationPlayerPage();
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
-    libraryPage = new LibraryPage.LibraryPage();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
+    libraryPage = new LibraryPage.LibraryPageHandler();
   });
 
   beforeEach(function() {

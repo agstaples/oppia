@@ -46,7 +46,7 @@ describe('Basic user journeys', function() {
     var libraryPage = null;
 
     beforeEach(function() {
-      libraryPage = new LibraryPage.LibraryPage();
+      libraryPage = new LibraryPage.LibraryPageHandler();
     });
 
     it('should create users', function() {
@@ -89,7 +89,7 @@ describe('Basic user journeys', function() {
     var preferencesPage = null;
 
     beforeEach(function() {
-      preferencesPage = new PreferencesPage.PreferencesPage();
+      preferencesPage = new PreferencesPage.PreferencesPageHandler();
     });
 
     it('should change editor role email checkbox value', function() {
@@ -193,14 +193,14 @@ describe('Site language', function() {
   var preferencesPage = null;
 
   beforeAll(function() {
-    adminPage = new AdminPage.AdminPage();
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
+    adminPage = new AdminPage.AdminPageHandler();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
     collectionEditorPage = new CollectionEditorPage.CollectionEditorPage();
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorMainTab = explorationEditorPage.getMainTab();
     explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();
-    libraryPage = new LibraryPage.LibraryPage();
-    preferencesPage = new PreferencesPage.PreferencesPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
+    preferencesPage = new PreferencesPage.PreferencesPageHandler();
 
     var CREATOR_USERNAME = 'langCreatorExplorations';
     var EDITOR_USERNAME = 'langCollections';

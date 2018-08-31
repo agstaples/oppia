@@ -34,7 +34,7 @@ describe('Library index page', function() {
   var explorationPlayerPage = null;
 
   beforeEach(function() {
-    libraryPage = new LibraryPage.LibraryPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorMainTab = explorationEditorPage.getMainTab();
     explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();
@@ -204,7 +204,7 @@ describe('Permissions for private explorations', function() {
   var explorationEditorPage = null;
 
   beforeEach(function() {
-    libraryPage = new LibraryPage.LibraryPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorMainTab = explorationEditorPage.getMainTab();
     explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();

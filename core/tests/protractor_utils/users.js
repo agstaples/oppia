@@ -22,7 +22,7 @@ var general = require('./general.js');
 var waitFor = require('./waitFor.js');
 
 var AdminPage = require('../protractor_utils/AdminPage.js');
-var adminPage = new AdminPage.AdminPage();
+var adminPage = new AdminPage.AdminPageHandler();
 
 var login = function(email, isSuperAdmin) {
   // Use of element is not possible because the login page is non-angular.

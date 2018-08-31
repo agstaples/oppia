@@ -45,8 +45,8 @@ describe('Full exploration editor', function() {
     explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
     explorationEditorMainTab = explorationEditorPage.getMainTab();
     explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();
-    libraryPage = new LibraryPage.LibraryPage();
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
     collectionEditorPage = new CollectionEditorPage.CollectionEditorPage();
   });
 

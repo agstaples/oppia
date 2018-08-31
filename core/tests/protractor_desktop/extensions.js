@@ -113,7 +113,7 @@ describe('Interactions', function() {
     explorationEditorMainTab = explorationEditorPage.getMainTab();
     explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();
     explorationPlayerPage = new ExplorationPlayerPage.ExplorationPlayerPage();
-    libraryPage = new LibraryPage.LibraryPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
   });
 
   it('should pass their own test suites', function() {

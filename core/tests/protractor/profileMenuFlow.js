@@ -27,7 +27,7 @@ describe('Profile menu flow', function() {
   var learnerDashboardPage = null;
 
   beforeAll(function() {
-    learnerDashboardPage = new LearnerDashboardPage.LearnerDashboardPage();
+    learnerDashboardPage = new LearnerDashboardPage.LearnerDashboardPageHandler();
     var VISITOR_USERNAME = 'desktopAndMobileVisitor';
     users.createAndLoginUser(
       'desktopAndMobileVisitor@profileMenuFlow.com', VISITOR_USERNAME);

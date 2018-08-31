@@ -37,8 +37,8 @@ describe('Collections', function() {
   var fourthExplorationId = null;
 
   beforeAll(function() {
-    adminPage = new AdminPage.AdminPage();
-    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
+    adminPage = new AdminPage.AdminPageHandler();
+    creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
     collectionEditorPage = new CollectionEditorPage.CollectionEditorPage();
     var EDITOR_USERNAME = 'aliceCollections';
     var PLAYER_USERNAME = 'playerCollections';

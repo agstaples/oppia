@@ -26,7 +26,7 @@ describe('screenreader and keyboard user accessibility features', function() {
   var libraryPage = null;
 
   beforeEach(function() {
-    libraryPage = new LibraryPage.LibraryPage();
+    libraryPage = new LibraryPage.LibraryPageHandler();
   });
 
   it('should skip to the main content element', function() {

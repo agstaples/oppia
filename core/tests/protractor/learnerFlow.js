@@ -91,13 +91,13 @@ describe('Learner dashboard functionality', function() {
   };
 
   beforeAll(function() {
-    adminPage = new AdminPage.AdminPage();
-    libraryPage = new LibraryPage.LibraryPage();
-    learnerDashboardPage = new LearnerDashboardPage.LearnerDashboardPage();
+    adminPage = new AdminPage.AdminPageHandler();
+    libraryPage = new LibraryPage.LibraryPageHandler();
+    learnerDashboardPage = new LearnerDashboardPage.LearnerDashboardPageHandler();
     // The editor and player page objects are only required for desktop testing.
     if (!browser.isMobile) {
       collectionEditorPage = new CollectionEditorPage.CollectionEditorPage();
-      creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPage();
+      creatorDashboardPage = new CreatorDashboardPage.CreatorDashboardPageHandler();
       explorationEditorPage = new ExplorationEditorPage.ExplorationEditorPage();
       explorationEditorMainTab = explorationEditorPage.getMainTab();
       explorationEditorSettingsTab = explorationEditorPage.getSettingsTab();
